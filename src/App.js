@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from "react"
+import { ThemeContext } from "./store/ChangeTheme"
+import Header from "./components/header/Header"
+import Calculator from "./components/calculator/Calculator"
+import styled from "styled-components"
+import "./App.css"
 
 function App() {
+  const { theme } = useContext(ThemeContext)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <CalculateStyled>
+      <div className={`App ${theme}`}>
+        <Header />
+      </div>
+      <Calculator />
+    </CalculateStyled>
+  )
 }
 
-export default App;
+export default App
+
+const CalculateStyled = styled.div`
+  text-align: center;
+`
