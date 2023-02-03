@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/homework-exam-task/static/css/main.dce43117.css",
+    "main.js": "/homework-exam-task/static/js/main.eb6f1f87.js",
+    "index.html": "/homework-exam-task/index.html",
+    "main.dce43117.css.map": "/homework-exam-task/static/css/main.dce43117.css.map",
+    "main.eb6f1f87.js.map": "/homework-exam-task/static/js/main.eb6f1f87.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dce43117.css",
+    "static/js/main.eb6f1f87.js"
+  ]
+}
